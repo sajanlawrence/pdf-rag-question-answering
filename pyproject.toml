@@ -1,0 +1,30 @@
+[project]
+name = "learn-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sajan Lawrence", email = "sajanlawrence12345@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "chromadb>=1.5.9",
+    "faiss-cpu>=1.13.0",
+    "fonttools>=4.60.2",
+    "ipykernel>=6.31.0",
+    "langchain>=0.3.30",
+    "langchain-community>=0.3.31",
+    "langchain-core>=0.3.86",
+    "langchain-groq>=0.3.8",
+    "pymupdf>=1.26.5",
+    "pypdf>=6.21.4",
+    "python-dotenv>=1.2.1",
+    "sentence-transformers>=5.1.2",
+]
+
+[project.scripts]
+learn-rag = "learn_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
