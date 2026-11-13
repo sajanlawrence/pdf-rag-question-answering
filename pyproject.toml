@@ -16,15 +16,18 @@ dependencies = [
     "langchain-community>=0.3.31",
     "langchain-core>=0.3.86",
     "langchain-groq>=0.3.8",
+    "langchain-text-splitters>=0.3.11",
+    "numpy>=2.0.2",
     "pymupdf>=1.26.5",
     "pypdf>=6.21.4",
     "python-dotenv>=1.2.1",
+    "rank-bm25>=0.2.2",
     "sentence-transformers>=5.1.2",
 ]
-
-[project.scripts]
-learn-rag = "learn_rag:main"
 
 [build-system]
 requires = ["uv_build>=0.13.7,<0.14.0"]
 build-backend = "uv_build"
+
+[tool.uv]
+package = false

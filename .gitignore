@@ -8,3 +8,4 @@ __pycache__/
 
 data/chroma_db/
 data/vectore_storedb/
+data/bm25_index.pkl/
